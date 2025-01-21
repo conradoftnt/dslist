@@ -4,8 +4,6 @@ import org.springframework.beans.BeanUtils;
 
 import com.conradofortunato.dslist.entities.GameList;
 
-import jakarta.websocket.Decoder;
-
 public class GameListDTO {
     private Long id;
     private String name;
