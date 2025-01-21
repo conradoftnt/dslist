@@ -24,21 +24,25 @@ public class Game {
     private String platforms;
     private double score;
     private String imgUrl;
+
+    @Column(columnDefinition="TEXT")
     private String shortDescription;
+
+    @Column(columnDefinition="TEXT")
     private String longDescription;
 
     public Game(){}
 
-    public Game(String genre, Long id, String imgUrl, String longDescription, String platforms, double score, String shortDescription, String title, int year) {
-        this.genre = genre;
+    public Game(Long id, String title, int year, String genre,  String platforms, String imgUrl,  double score, String shortDescription, String longDescription) {
         this.id = id;
-        this.imgUrl = imgUrl;
-        this.longDescription = longDescription;
-        this.platforms = platforms;
-        this.score = score;
-        this.shortDescription = shortDescription;
         this.title = title;
         this.year = year;
+        this.genre = genre;
+        this.platforms = platforms;
+        this.imgUrl = imgUrl;
+        this.score = score;
+        this.shortDescription = shortDescription;
+        this.longDescription = longDescription;
     }
 
     public Long getId() {
