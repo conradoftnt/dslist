@@ -13,8 +13,6 @@ import com.conradofortunato.dslist.dto.GameMinDTO;
 import com.conradofortunato.dslist.services.GameListService;
 import com.conradofortunato.dslist.services.GameService;
 
-import jakarta.websocket.server.PathParam;
-
 @RestController
 @RequestMapping(value="/lists")
 public class GameListController {
