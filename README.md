@@ -12,7 +12,7 @@ O DSList é uma aplicação back-end com a funcionalidade de gerir uma lista de 
 - Buscar um jogo pelo ID (GET "/games/{id}")
 - Buscar todas as listas (GET "/lists")
 - Buscar uma lista pelo ID (GET "/lists/id")
-- Alterar a posição de um jogo em uma lista (POST "/lists/{id}/replacement" body:{
+- Alterar a posição de um jogo em uma lista (POST "/lists/{id}/replacement" body: {
     "sourceIndex": int,
     "destinationIndex": int
 })
